@@ -47,7 +47,7 @@ const formatIntersectionData = (data) => {
       // https://stackoverflow.com/questions/37320296/how-to-calculate-intersection-of-multiple-arrays-in-javascript-and-what-does-e
       const result = values.reduce((a, b) => a.filter((c) => b.includes(c)));
       intersections.push({
-        name: intName.split('').map((set) => soloSets.find((x) => x.setName === set).name).join(' + '),
+        name: intName.split('').map((set) => soloSets.find((x) => x.setName === set).name).join('  ∩ '),
         setName: intName,
         num: result.length,
         values: result,
